@@ -7,10 +7,14 @@ using namespace std;
 class Car
 {
     private:
+    // attributes
     double _dblSpeed;
+    double _dblMaxSpeed;
     string _strMake;
     string _strModel;
     public:
+    // methods
+    int increaseSpeed();
     double getSpeed();
     void setSpeed(double);
     string getMake();
@@ -19,6 +23,7 @@ class Car
     void setModel(string);
     Car(string, string, double);
     Car();
+    
     
 
 };
