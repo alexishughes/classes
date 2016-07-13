@@ -1,6 +1,10 @@
 #include "car.h"
 Car::Car()
 {
+    // todo set the make and model to robin reliant!!
+    
+    
+    
     _dblMaxSpeed = 70;
     _dblSpeed = 0;
 }
@@ -37,7 +41,7 @@ double Car::getSpeed()
 }
 int Car::increaseSpeed() 
 {
-   double _dblSpeed = _dblSpeed + 1;
+    _dblSpeed += 10; 
     if (_dblSpeed >= _dblMaxSpeed) 
     {
          cout << "Slow down, you are going to fast" << endl;
